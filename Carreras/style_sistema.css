@@ -1,0 +1,86 @@
+/* Barra lateral */
+.sidebar {
+    background-color: #f5f5f5;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar nav ul li {
+    margin: 0 10px;
+}
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.sidebar a:hover {
+    color: #007bff;
+}
+
+/* Estilo del contenedor de texto e imágenes */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(211, 250, 192); /* COLOR DEL CONTENEDOR */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #34495e;
+    text-align: justify;
+    margin-bottom: 0;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+}
+
+.container h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Responsivo */
+
+/* Móviles */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        margin: 10px;
+    }
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1200px) {
+    body {
+        font-size: 16px;
+        margin: 20px;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1201px) {
+    body {
+        font-size: 18px;
+        margin: 40px;
+    }
+}
